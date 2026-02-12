@@ -6,7 +6,7 @@ INSTALL:
 
 Add this suite to "/ComfyUI/custom_nodes"
 
-in cmd console: git clone https://github.com/ShakerSmith/ShakerNodesSuite-0.2
+in cmd console: git clone https://github.com/ShakerSmith/ShakerNodesSuite
 
 2. OPEN THE INCLUDED EXAMPLE "TUTORIAL" WORKFLOW: 
 
