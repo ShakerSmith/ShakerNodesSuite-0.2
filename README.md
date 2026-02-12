@@ -47,12 +47,13 @@ will take all the LABELS of your presets and output them, can be turned on an of
 
 Big Display - display any, right-click properties to change font size and color - visible at any zoom level
 
-Advanced Image Save
-can save as .png or .webp - has inputs for metadata and toggles for folder_by_date (YYYY-MM-DD), prefix timestamp for the file (HHMM), and a custom sub_directory.
+Advanced Image Save -can save as .png or .webp - has inputs for metadata and toggles for folder_by_date (YYYY-MM-DD), prefix timestamp for the file (HHMM), and a custom sub_directory.
 0424_BW-Group-Varied-Elderly-Bored-Business Suit-GlassesBlack-Close-Up-Portrait-CityDayTrees
 
 
-Extra Nodes:
+EXTRA NODES:
+
+
 A. Pipe Any - Shaker Pipe Pack / Unpack - pipe any, inputs automatically generate as you add more. mapped 1 - to - 1 inputs to outputs.
 
 B. Batch Any - lazy batching, doesn't fault if any inputs get a null in
@@ -61,3 +62,12 @@ C. Color Match - takes a reference image, applies color matching
 incrementally over a batch
 
 D. Timer Node - right click to change font size and color - visible at any zoom level
+
+
+
+ONCE YOU'VE GOT THE HANG OF HOW THE SUITE WORKS - build whatever kind of UI you want, drag your category nodes where they make sense to you, pin presets to the top or bottom of the category node from the Preset Manager. 
+
+HERE'S AN EXAMPLE OF A COMPACT WORKFLOW:
+
+
+<img width="832" height="1248" alt="ShakerNodes-Compact" src="https://github.com/user-attachments/assets/fe31627a-98eb-452e-82b8-73df498b821d" />
