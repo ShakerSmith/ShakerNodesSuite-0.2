@@ -1,0 +1,616 @@
+{
+    "build_order": [
+        "ScenePresets",
+        "Artist",
+        "Photography",
+        "Quantity",
+        "Age",
+        "Nationality",
+        "Subject",
+        "BodyAccessories",
+        "Haircolor",
+        "Hairstyle",
+        "Eyecolor",
+        "Expression",
+        "Outfits",
+        "OutfitAccessories",
+        "Poses",
+        "Setting",
+        "CustomSign",
+        "Extras"
+    ],
+    "prompts": {
+        "Artist": [
+            {
+                "prompt": "by Norman Rockwell",
+                "neg_prompt": "",
+                "label": "Norman Rockwell",
+                "exclude_from_random": false,
+                "pin_status": "normal"
+            }
+        ],
+        "Photography": [
+            {
+                "label": "Rockwell",
+                "prompt": "Vintage 1950s painterly illustration -  rendered with soft, visible brushstrokes and a warm, sepia-toned light that evokes the classic \"Saturday Evening Post\" aesthetic",
+                "pin_status": "normal"
+            },
+            {
+                "prompt": "analog film photograph, masterpiece, film, cinematic",
+                "neg_prompt": "",
+                "label": "AnalogPhoto-Masterpiece",
+                "exclude_from_random": false
+            },
+            {
+                "label": "BW",
+                "prompt": "black and white photography, low key, dramatic lighting, dark theme, greyscale, monochrome",
+                "neg_prompt": ""
+            }
+        ],
+        "Quantity": [
+            {
+                "label": "Group-Varied",
+                "prompt": "a group of men and women, with a variety of ethnicities, skintones, and hairstyles",
+                "pin_status": "normal"
+            },
+            {
+                "prompt": "1girl, one woman",
+                "neg_prompt": "",
+                "label": "1 Woman",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "2girls, two women",
+                "neg_prompt": "",
+                "label": "2 Women",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "1man, one man",
+                "neg_prompt": "",
+                "label": "1 Man",
+                "exclude_from_random": false
+            }
+        ],
+        "Nationality": [
+            {
+                "label": "Irish",
+                "prompt": "Irish person, from Ireland",
+                "pin_status": "normal"
+            },
+            {
+                "label": "Norwegian",
+                "prompt": "Norwegian person from Norway",
+                "pin_status": "normal"
+            },
+            {
+                "prompt": "African person from Africa",
+                "neg_prompt": "",
+                "label": "African",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "Brazilian person from Brazil",
+                "neg_prompt": "",
+                "label": "Brazilian",
+                "exclude_from_random": false
+            }
+        ],
+        "Age": [
+            {
+                "prompt": "20 years old",
+                "neg_prompt": "",
+                "label": "20",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "30 years old",
+                "neg_prompt": "",
+                "label": "30",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "40 years old",
+                "neg_prompt": "",
+                "label": "40",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "elderly",
+                "neg_prompt": "",
+                "label": "Elderly",
+                "exclude_from_random": false
+            }
+        ],
+        "Subject": [
+            {
+                "label": "Elderly Man",
+                "prompt": "an elderly man, age 85, with a deeply wrinkled face",
+                "pin_status": "normal"
+            },
+            {
+                "label": "40s Couple",
+                "prompt": "married couple. a man and a woman, in their mid-forties",
+                "pin_status": "normal"
+            },
+            {
+                "prompt": "an elderly woman, age 85, with a deeply wrinkled face",
+                "neg_prompt": "",
+                "label": "Grandma",
+                "exclude_from_random": false
+            }
+        ],
+        "Haircolor": [
+            {
+                "prompt": "with black hair",
+                "neg_prompt": "",
+                "label": "Black",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with blonde hair",
+                "neg_prompt": "",
+                "label": "Blonde",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with brown hair",
+                "neg_prompt": "",
+                "label": "Brown",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with gray hair",
+                "neg_prompt": "",
+                "label": "Gray",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with bright red hair",
+                "neg_prompt": "",
+                "label": "Red",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with white hair",
+                "neg_prompt": "",
+                "label": "White",
+                "exclude_from_random": false
+            },
+            {
+                "label": "Pink",
+                "prompt": "with pink hair",
+                "pin_status": "normal"
+            }
+        ],
+        "Hairstyle": [
+            {
+                "prompt": "hair worn in a messy braided ponytail",
+                "neg_prompt": "",
+                "label": "Braid",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "long curly messy hair, wild and curly hair",
+                "neg_prompt": "",
+                "label": "Curly",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "hair in coff, formal updo",
+                "neg_prompt": "",
+                "label": "FormalCut",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "in a very short pixie cut",
+                "neg_prompt": "",
+                "label": "PixieCut",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "long messy hair blowing in the wind",
+                "neg_prompt": "",
+                "label": "WindBlown",
+                "exclude_from_random": false
+            }
+        ],
+        "Eyecolor": [
+            {
+                "label": "Grey",
+                "prompt": "with deep, steely grey colored eyes",
+                "pin_status": "normal"
+            },
+            {
+                "prompt": "with big light blue eyes",
+                "neg_prompt": "",
+                "label": "Blue",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with big ((brown)) eyes",
+                "neg_prompt": "",
+                "label": "Brown",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with chestnut eyes",
+                "neg_prompt": "",
+                "label": "Chestnut",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with big bright green eyes",
+                "neg_prompt": "",
+                "label": "Green",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with hazel eyes",
+                "neg_prompt": "",
+                "label": "Hazel",
+                "exclude_from_random": false
+            }
+        ],
+        "Expression": [
+            {
+                "prompt": "their face shows boredom and exhaustion, ((eyes looking away to the side)), (bored:1.6)",
+                "neg_prompt": "",
+                "label": "Bored",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "(eyes closed:1.4), asleep",
+                "neg_prompt": "",
+                "label": "EyesClosed",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "their face shows curiousity and intrigue, they are giving a quizzical look with (one raised eyebrow)",
+                "neg_prompt": "",
+                "label": "Intrigued",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "with an expression of laughter \u2013 a wide, unrestrained, joyful laugh with open eyes and an open mouth",
+                "neg_prompt": "",
+                "label": "Laughing",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "(surprised expression:1.4), caught by surprise, caught off guard",
+                "neg_prompt": "",
+                "label": "Surprised",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "blushing, they look (embarrassed:1.4)",
+                "neg_prompt": "",
+                "label": "Embarassed",
+                "exclude_from_random": false
+            }
+        ],
+        "Outfits": [
+            {
+                "label": "Clown",
+                "prompt": "wearing a classic \"clown\" costume, clown outfit, big red shoes, colorful clothing, stripes, puffy sleeves",
+                "pin_status": "normal"
+            },
+            {
+                "label": "Business Suit",
+                "prompt": "wearing a perfectly tailored business suit",
+                "pin_status": "normal"
+            },
+            {
+                "prompt": "wearing dark olive green collared dress",
+                "neg_prompt": "",
+                "label": "Dress-GreenCollar",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "wearing black, v-neck tee, ripped black jeans, combat boots, ",
+                "neg_prompt": "",
+                "label": "Black-V-Jeans",
+                "exclude_from_random": false,
+                "pin_status": "bottom"
+            },
+            {
+                "label": "Dress-Red",
+                "prompt": "wearing a long, flowing red dress with ruffles on the sleeves, ",
+                "neg_prompt": ""
+            }
+        ],
+        "Poses": [
+            {
+                "prompt": "(Whole body), looking at viewer, walking forward with a confident stride with one foot forward and the other slightly back. Their body is angled slightly to the side, emphasizing their form and creating a sense of movement",
+                "neg_prompt": "",
+                "label": "Walking",
+                "exclude_from_random": false,
+                "pin_status": "bottom"
+            },
+            {
+                "prompt": "standing, ((from front:1.1)), full body shot, wide angle, ((looking_at_viewer)), (arms at sides)",
+                "neg_prompt": "",
+                "label": "Standing-ArmsDown",
+                "exclude_from_random": false,
+                "pin_status": "bottom"
+            },
+            {
+                "prompt": "closeup portrait",
+                "neg_prompt": "",
+                "label": "Close-Up-Portrait",
+                "exclude_from_random": false,
+                "pin_status": "bottom"
+            },
+            {
+                "prompt": "sitting in chair, crossed legs, legs crossed, hands behind head",
+                "neg_prompt": "",
+                "label": "Sitting-Crossed",
+                "exclude_from_random": false
+            },
+            {
+                "label": "Walking-Side",
+                "prompt": "(Whole body), ((side angle:1.5)), looking at viewer, (walking, ((legs apart)))",
+                "neg_prompt": ""
+            }
+        ],
+        "Setting": [
+            {
+                "prompt": "in a red room with red walls, evocative, soft shadows, detailed, 50mm lens, f/2.8, cinematic, artistic, dramatic shadows",
+                "neg_prompt": "",
+                "label": "RedRoom",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "a city street lined with trees, bright sunny day, 50mm lens, f/1.8, sunny day, high detail, vibrant yet subdued colors, natural light",
+                "neg_prompt": "",
+                "label": "CityDayTrees",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "in a white room with white walls, flat white painted walls,  evocative, soft shadows, detailed, 50mm lens, f/2.8, cinematic, artistic, dramatic shadows",
+                "neg_prompt": "",
+                "label": "WhiteRoom",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "((inside a dimly lit old barn, light shafts coming in through cracks in the walls)), (extremely muted color tones:1.4), (extremely low contrast:1.3), (duotone:1.2), gentle focus, cool tones, subtle highlights, earthy palette, calm and introspective, 85mm lens, f/2, vintage film grain",
+                "neg_prompt": "",
+                "label": "Barn",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "in a cozy cabin, wood walls, blankets, rustic, (extremely muted color tones:1.4), (extremely low contrast:1.3), (duotone:1.2), gentle focus, cool tones, subtle highlights, earthy palette, calm and introspective, 85mm lens, f/2, vintage film grain",
+                "neg_prompt": "",
+                "label": "Cabin",
+                "exclude_from_random": false
+            },
+            {
+                "label": "NaturalLight-Simple",
+                "prompt": "The background is blurred, but it appears to be a room with large windows that let in natural light. The overall mood of the image is dreamy and ethereal.",
+                "neg_prompt": ""
+            },
+            {
+                "label": "Balcony",
+                "prompt": "posed against the backdrop of an elegantly designed balcony, showcasing elements of classic architecture with decorative railings and detailed structure in the background",
+                "neg_prompt": ""
+            }
+        ],
+        "CustomSign": [
+            {
+                "prompt": "in the background a chalkboard with the text",
+                "neg_prompt": "",
+                "label": "Sign-Chalkboard",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "in the background a neon sign with white letters, the text",
+                "neg_prompt": "",
+                "label": "Sign-Neon-White",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "holding a handwritten note with the text",
+                "neg_prompt": "",
+                "label": "Handwritten",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "there is chalk writing on the floor with the text",
+                "neg_prompt": "",
+                "label": "ChalkFloor",
+                "exclude_from_random": false
+            },
+            {
+                "label": "Sign-Neon-Red",
+                "prompt": "in the background a neon sign with red letters, the text",
+                "neg_prompt": ""
+            }
+        ],
+        "Extras": [
+            {
+                "prompt": "polaroid photo, scratched, film grain, corroded, patina, grainy, discolored, hd, blurry bokeh, (masterpiece, best quality, realistic) | expired film |",
+                "neg_prompt": "",
+                "label": "Polaroid",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "film grain, retro, (bokeh:1.3), Portra 160 color, shot on ARRI ALEXA 65, sharp focus on subject, Fujifilm XT-3",
+                "neg_prompt": "",
+                "label": "Portra160",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "shot with Leica SL2 and APO-Summicron-SL 75mm f/2 ASPH lens at f/2",
+                "neg_prompt": "",
+                "label": "Leica",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "shot with hasselblad H6D",
+                "neg_prompt": "",
+                "label": "Hasselblad",
+                "exclude_from_random": false
+            },
+            {
+                "label": "85mm-DoF",
+                "prompt": "Photorealistic 8K, cinematic 85mm, shallow depth of field",
+                "neg_prompt": ""
+            }
+        ],
+        "BodyAccessories": [
+            {
+                "prompt": "tattoos on her arms and legs",
+                "neg_prompt": "",
+                "label": "Tattoos",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "they have tattoos on their legs",
+                "neg_prompt": "",
+                "label": "Tattoos-Legs",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "they have tattoos on their arms",
+                "neg_prompt": "",
+                "label": "Tattoos-Arms",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "(wing eyeliner, smokey eyes dark eyeshadow)",
+                "neg_prompt": "",
+                "label": "Smoky-Eye",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "(freckles)",
+                "neg_prompt": "",
+                "label": "Freckles",
+                "exclude_from_random": false
+            }
+        ],
+        "OutfitAccessories": [
+            {
+                "prompt": "wearing canvas sneakers",
+                "neg_prompt": "",
+                "label": "Chucks",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "wearing aviator sunglasses",
+                "neg_prompt": "",
+                "label": "Aviators",
+                "exclude_from_random": false
+            },
+            {
+                "label": "CombatBoots",
+                "prompt": "wearing black combat boots",
+                "neg_prompt": ""
+            },
+            {
+                "label": "GlassesBlack",
+                "prompt": "they are wearing (black frame eyeglasses:1.2)",
+                "neg_prompt": ""
+            }
+        ],
+        "ScenePresets": [
+            {
+                "label": "FoggyLandscape",
+                "prompt": "A desolate, hyper-realistic moorland under a heavy, suffocating blanket of low-hanging fog. Ancient, gnarled dead trees silhouetted against a dim, bruised twilight sky. A single, crumbling stone path leading toward a distant, indistinct monolith. Muted charcoal and deep indigo color palette with subtle hints of cold silver. Wet, glistening moss on jagged rocks, fine droplets of mist in the air, cinematic depth of field, melancholic atmosphere, shot on 35mm film, grainy texture, eerie stillness, 8k",
+                "pin_status": "normal"
+            },
+            {
+                "label": "CyberJungle",
+                "prompt": "A hyper-detailed, cinematic wide shot of a futuristic \"Cyber-Jungle\" metropolis at dusk. Bioluminescent tropical flora entwined around sleek obsidian skyscrapers. Vibrant neon koi fish made of liquid light swimming through the humid air. Intricate gold filigree on architecture, high-speed light trails from hovering vehicles, volumetric purple mist, and deep teal shadows. 8k resolution, photorealistic, synthwave color palette, sharp focus, intricate textures, masterpiece, octane render.",
+                "pin_status": "normal"
+            },
+            {
+                "prompt": "by Annie Leibovitz | a group of men and women in their mid-forties | they are wearing (plastic frame eyeglasses:1.6) | pink background, pink carpet, pink lounge, (muted pink tones:1.2), (soft lighting:1.2), (contemplative:1.2), natural light, high detail, soft focus, elegant, serene, intricate textures, calm, nostalgic, 50mm lens, f/2.8, artistic, intimate, melancholic, refined",
+                "neg_prompt": "",
+                "label": "Group-Pink Room",
+                "exclude_from_random": false
+            },
+            {
+                "prompt": "(masterpiece, best quality, realistic), (vintage film photo:1.4), (Kodachrome film stock:1.4), (candid:1.2) | an elderly man, age 85, with a deeply wrinkled face | ((inside a dimly lit old barn, light shafts coming in through cracks in the walls)), (extremely muted color tones:1.4), (extremely low contrast:1.3), (duotone:1.2), gentle focus, cool tones, subtle highlights, earthy palette, calm and introspective, 85mm lens, f/2, vintage film grain",
+                "neg_prompt": "",
+                "label": "Elderly Man-Barn",
+                "exclude_from_random": false
+            }
+        ]
+    },
+    "category_settings": {
+        "Nationality": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "BodyAccessories": {
+            "multi_select": true,
+            "random_at_bottom": false
+        },
+        "OutfitAccessories": {
+            "multi_select": true,
+            "random_at_bottom": false
+        },
+        "Setting": {
+            "multi_select": false,
+            "random_at_bottom": true
+        },
+        "Poses": {
+            "multi_select": false,
+            "random_at_bottom": true
+        },
+        "Outfits": {
+            "multi_select": false,
+            "random_at_bottom": true
+        },
+        "Photography": {
+            "multi_select": true,
+            "random_at_bottom": false
+        },
+        "Extras": {
+            "multi_select": true,
+            "random_at_bottom": false
+        },
+        "Hairstyle": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "Subject": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "Expression": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "Eyecolor": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "CustomSign": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "Artist": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "Quantity": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "Age": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "ScenePresets": {
+            "multi_select": false,
+            "random_at_bottom": false
+        },
+        "Haircolor": {
+            "multi_select": false,
+            "random_at_bottom": false
+        }
+    }
+}

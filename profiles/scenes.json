@@ -1,0 +1,278 @@
+{
+    "1_Man_AnalogPhoto_Masterpiece_85mm_DoF": {
+        "state": {
+            "Age": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Eyecolor": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "BodyAccessories": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Nationality": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Artist": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "ScenePresets": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Subject": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Outfits": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Quantity": {
+                "selected": [
+                    "1_Man"
+                ],
+                "mode": "manual"
+            },
+            "Hairstyle": {
+                "selected": [],
+                "mode": "random all"
+            },
+            "Photography": {
+                "selected": [
+                    "AnalogPhoto_Masterpiece"
+                ],
+                "mode": "manual"
+            },
+            "Extras": {
+                "selected": [
+                    "85mm_DoF"
+                ],
+                "mode": "manual"
+            },
+            "Haircolor": {
+                "selected": [],
+                "mode": "random all"
+            },
+            "Setting": {
+                "selected": [
+                    "WhiteRoom"
+                ],
+                "mode": "manual"
+            },
+            "OutfitAccessories": {
+                "selected": [
+                    "Aviators"
+                ],
+                "mode": "random all"
+            },
+            "Expression": {
+                "selected": [
+                    "Bored",
+                    "Embarassed",
+                    "Intrigued",
+                    "Laughing"
+                ],
+                "mode": "random select"
+            },
+            "CustomSign": {
+                "selected": [
+                    "Sign_Neon_Red"
+                ],
+                "mode": "manual"
+            },
+            "Poses": {
+                "selected": [],
+                "mode": "random all"
+            }
+        },
+        "description": ""
+    },
+    "NormanRockwell-Elderly-Laughing": {
+        "state": {
+            "Eyecolor": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "BodyAccessories": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Nationality": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "ScenePresets": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Subject": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Outfits": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Poses": {
+                "selected": [],
+                "mode": "random all"
+            },
+            "Quantity": {
+                "selected": [
+                    "Group_Varied"
+                ],
+                "mode": "manual"
+            },
+            "Age": {
+                "selected": [
+                    "Elderly"
+                ],
+                "mode": "manual"
+            },
+            "Artist": {
+                "selected": [
+                    "Norman_Rockwell"
+                ],
+                "mode": "manual"
+            },
+            "Photography": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Extras": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "CustomSign": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Setting": {
+                "selected": [
+                    "CityDayTrees"
+                ],
+                "mode": "manual"
+            },
+            "Hairstyle": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Haircolor": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "OutfitAccessories": {
+                "selected": [
+                    "GlassesBlack"
+                ],
+                "mode": "manual"
+            },
+            "Expression": {
+                "selected": [
+                    "Laughing"
+                ],
+                "mode": "manual"
+            }
+        },
+        "description": ""
+    },
+    "Group_Varied_Elderly_CityDayTrees": {
+        "state": {
+            "Eyecolor": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "BodyAccessories": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Nationality": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "ScenePresets": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Subject": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Poses": {
+                "selected": [],
+                "mode": "random all"
+            },
+            "Quantity": {
+                "selected": [
+                    "Group_Varied"
+                ],
+                "mode": "manual"
+            },
+            "Age": {
+                "selected": [
+                    "Elderly"
+                ],
+                "mode": "manual"
+            },
+            "CustomSign": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Setting": {
+                "selected": [
+                    "CityDayTrees"
+                ],
+                "mode": "manual"
+            },
+            "Hairstyle": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Haircolor": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "OutfitAccessories": {
+                "selected": [
+                    "GlassesBlack"
+                ],
+                "mode": "manual"
+            },
+            "Outfits": {
+                "selected": [
+                    "Business_Suit"
+                ],
+                "mode": "manual"
+            },
+            "Expression": {
+                "selected": [
+                    "Bored"
+                ],
+                "mode": "manual"
+            },
+            "Artist": {
+                "selected": [],
+                "mode": "manual"
+            },
+            "Photography": {
+                "selected": [
+                    "BW"
+                ],
+                "mode": "manual"
+            },
+            "Extras": {
+                "selected": [
+                    "Polaroid"
+                ],
+                "mode": "manual"
+            }
+        },
+        "description": ""
+    }
+}
