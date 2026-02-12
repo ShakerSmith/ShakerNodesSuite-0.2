@@ -73,3 +73,7 @@ HERE'S AN EXAMPLE OF A COMPACT WORKFLOW:
 
 
 <img width="832" height="1248" alt="ShakerNodes-Compact" src="https://github.com/user-attachments/assets/fe31627a-98eb-452e-82b8-73df498b821d" />
+
+
+
+<img width="1000" height="808" alt="5-Compact" src="https://github.com/user-attachments/assets/652aabe6-40fd-4903-9550-eca2f6a3a8c9" />
