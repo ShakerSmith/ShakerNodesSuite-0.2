@@ -284,7 +284,21 @@ Combines batch processing with video handling. This node is built for high-volum
 | **Recursive Support** | No | Yes | Yes |
 | **Primary Use** | Individual Clips | Bulk Image Processing | Batch Vid2Vid |
 
+# 🔗 Shaker Concatenate Any
 
+A dynamic, intelligent string concatenation node for **ComfyUI**. Part of the **ShakerNodes Suite**, this node is designed to merge multiple text inputs while automatically handling empty values, whitespace, and formatting.
+
+---
+
+## 🚀 Features
+
+* **Dynamic Input Scaling**: Automatically expands from 4 up to 20 input slots as you connect them in the UI.
+* **Smart Filtering**: Automatically ignores `None`, empty strings, or whitespace-only inputs to prevent "phantom" delimiters in your final text.
+* **Custom Delimiters**: Define any string (e.g., `, `, ` - `, ` | `) to separate your inputs.
+* **Linebreak Support**: Toggle a "Linebreak" mode to instantly switch from your custom delimiter to double newlines (`\n\n`)—ideal for combining prompts or notes.
+* **Clean UI**: Includes a JavaScript extension to hide unused slots, keeping your workflow tidy and focused.
+
+---
 
 # 🛠 Shaker Pipe System
 
