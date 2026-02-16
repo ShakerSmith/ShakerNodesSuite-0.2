@@ -152,6 +152,41 @@ The node provides immediate visual feedback. When a workflow is idle or reset, t
 * **Seed Tracking:** Display the current seed or checkpoint name prominently.
 * **Instruction Labels:** Use it as a large, dynamic label to explain different sections of a shared workflow.
 
+# 📥 Shaker I/O: Advanced Loaders
+
+The Shaker I/O suite provides high-performance loading utilities designed to handle large-scale batch processing and video workflows. These nodes solve the common ComfyUI bottleneck of manually selecting files by enabling automated folder monitoring and intelligent sequence handling.
+
+---
+
+## 🎥 Video Single Loader
+Designed for precision work on individual video files. It provides a streamlined way to import video into your workflow with full support for ComfyUI's internal pathing.
+* **Smart Detection:** Automatically filters the input directory for supported formats (`.mp4`, `.mov`, `.avi`, `.webm`, `.mkv`).
+* **Frame-Accurate Metadata:** Outputs the full image batch alongside the original filename, the detected FPS, and the total frame count.
+* **Native Integration:** Supports drag-and-drop file uploads directly onto the node.
+
+## 📂 Folder Loader (Image Batching)
+The ultimate tool for bulk processing. Instead of loading one image at a time, this node points to a directory and handles the iteration for you.
+* **Recursive Search:** Optional toggle to scan subfolders, allowing you to organize your dataset into nested directories.
+* **One-by-One Execution:** Uses `OUTPUT_IS_LIST` logic to trigger the workflow once for every image in the folder—perfect for automated upscaling or batch re-styling.
+* **Automatic Orientation:** Uses EXIF transpose logic to ensure images are correctly rotated before they hit your sampler.
+
+## 🎞️ Video Folder Loader
+Combines batch processing with video handling. This node is built for high-volume video-to-video (Vid2Vid) workflows where you need to process multiple video files in a single queue.
+* **Sequence Automation:** Points to a folder containing multiple video files and processes each one sequentially.
+* **Independent FPS Handling:** Dynamically reads and outputs the FPS for each individual video in the batch, ensuring your final exports maintain their intended timing.
+* **Full Batch Output:** Like the single loader, it converts each video into a standardized image tensor [Frames, H, W, C] ready for immediate use in any sampler or AnimateDiff pipeline.
+
+---
+
+## 🛠 Feature Comparison
+
+| Feature | Video Single | Folder Loader | Video Folder |
+| :--- | :--- | :--- | :--- |
+| **Input Type** | File Selection | String Path | String Path |
+| **Data Format** | Video Frames | Image List | Video Frame List |
+| **Recursive Support** | No | Yes | Yes |
+| **Primary Use** | Individual Clips | Bulk Image Processing | Batch Vid2Vid |
+
 
 
 # 🛠 Shaker Pipe System
