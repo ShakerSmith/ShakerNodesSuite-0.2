@@ -14,20 +14,20 @@ TUTORIAL WORKLOW: <img width="832" height="1248" alt="ShakerNodes-Tutorial" src=
 
 NODES IN THIS SUITE:
 
-Prompt Builder:
+# PROMPT BUILDER:
 
 <img width="488" height="347" alt="546561546-364eec63-7718-441f-a75e-188744aa4767" src="https://github.com/user-attachments/assets/4b1100f7-675b-4f72-8d0b-d3515154fc93" />
 
 "Categories" "Presets" "Scenes"
 
-A: Categories - contain "presets" and, on reload, will generate a new node for each category. That category's node will contain all the presets saved in that category.
+## A: Categories - contain "presets" and, on reload, will generate a new node for each category. That category's node will contain all the presets saved in that category.
 
-B: Presets - presets contain the actual prompt text you want to be sent to the final prompt.
+## B: Presets - presets contain the actual prompt text you want to be sent to the final prompt.
 each "category" node can be set to manual (choose ONE preset), random all (randomly choose from ALL presets in that category), or random select (choose from only the presets user selects)
 
-C: Scenes - contain the randomization modes and any preset selections for all loaded nodes in this nodesuite
+## C: Scenes - contain the randomization modes and any preset selections for all loaded nodes in this nodesuite
 
-3. Preset Manager / Scene Manager
+# Preset Manager / Scene Manager
 
 <img width="614" height="233" alt="PresetManager" src="https://github.com/user-attachments/assets/5bfaed00-5f26-49bf-b3f8-751de33cec97" />
 
@@ -38,14 +38,14 @@ open the "SM" floating button, or "Scene Manager" on the Dashboard node. Can "ca
 ADDING A NEW CATEGORY REQUIRES A COMFYUI RESTART. The Prompt Builder Console, on restart, will have a new input for your new category. There will ALSO be a new node available for you to connect to the Prompt Builder Console. Build order can be changed in the "edit categories" mode of the Preset Manager (floating "PM" button)
 
 
-Metadata Filter,
+# Metadata Filter,
 will take all the LABELS of your presets and output them, can be turned on an off by category in the right-click node properties panel.
 
 
 
 
 
-Advanced Image Save -can save as .png or .webp - has inputs for metadata and toggles for folder_by_date (YYYY-MM-DD), prefix timestamp for the file (HHMM), and a custom sub_directory.
+# Advanced Image Save -can save as .png or .webp - has inputs for metadata and toggles for folder_by_date (YYYY-MM-DD), prefix timestamp for the file (HHMM), and a custom sub_directory.
 0424_BW-Group-Varied-Elderly-Bored-Business Suit-GlassesBlack-Close-Up-Portrait-CityDayTrees
 
 # 📏 Shaker Latent Generator
@@ -365,11 +365,56 @@ By picking one "Gold Standard" image (the `reference_image`), you can ensure tha
 * **Batch Uniformity:** Keep both strengths at `1.0` to force every image in a large batch to match a specific photographic style.
 
 
-D. Timer Node - right click to change font size and color - visible at any zoom level
+
+# ⏱️ Shaker Timer
+
+The **Shaker Timer** is a specialized diagnostic utility for ComfyUI that provides real-time visual feedback on generation duration. It is designed to help users benchmark their workflows and track performance across different models or hardware configurations.
+
+## 🚀 Why use this?
+
+Standard ComfyUI logs generation time in the console or terminal after the fact, which is often difficult to see while working. The **Shaker Timer** puts a high-visibility stopwatch directly on your canvas that activates the moment you hit "Queue Prompt" and stops precisely when the final image is saved.
+
+---
+
+## ✨ Key Features
+
+### 1. Live Canvas Rendering
+Unlike nodes that wait for a process to finish before updating, the Shaker Timer uses a JavaScript-driven animation loop to display a ticking clock directly on the node's face in real-time.
+
+### 2. Global Execution Monitoring
+The timer is connected to the ComfyUI API events. It automatically:
+* **Starts** when `execution_start` is triggered.
+* **Stops** when the graph execution finishes or encounters an error.
+* **Persists** the final time of the last run so you can compare it after the process is done.
+
+### 3. Customizable Visibility
+To ensure the timer remains legible regardless of your workflow's complexity or zoom level, you can customize the display via the **Right-Click context menu**:
+* **Font Size:** Scale from 40px up to 150px (Billboard size).
+* **Font Color:** Choose from preset high-contrast colors (Neon Green, Cyber Blue, Gold, etc.).
+
+### 4. Zero Performance Impact
+The timer logic is handled by the browser's `requestAnimationFrame` and local timing. It does not put any load on your GPU or CPU processing during the sampling phase.
+
+---
+
+## 🛠 Inputs & Controls
+
+| Input | Description |
+| :--- | :--- |
+| **Context Menu** | Right-click the node to access `Timer: Font Size` and `Timer: Font Color` sub-menus. |
+| **Stopwatch Format** | Displays time in a standardized `HH:MM:SS` format. |
+
+---
+
+## 🚀 Common Use Cases
+
+* **Hardware Benchmarking:** Compare how much faster your SDXL generations are on different TensorRT engines or GPU settings.
+* **Workflow Optimization:** Identify which specific node groups are slowing down your process by watching the timer tick during active sampling.
+* **Presentation & Recording:** Provide clear visual proof of generation speeds for tutorials or screen recordings.
 
 
 
-ONCE YOU'VE GOT THE HANG OF HOW THE SUITE WORKS - build whatever kind of UI you want, drag your category nodes where they make sense to you, pin presets to the top or bottom of the category node from the Preset Manager. 
+# ONCE YOU'VE GOT THE HANG OF HOW THE SUITE WORKS - build whatever kind of UI you want, drag your category nodes where they make sense to you, pin presets to the top or bottom of the category node from the Preset Manager. 
 
 HERE'S AN EXAMPLE OF A COMPACT WORKFLOW:
 
