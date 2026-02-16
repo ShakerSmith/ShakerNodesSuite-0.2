@@ -46,9 +46,37 @@ Big Display - display any, right-click properties to change font size and color 
 Advanced Image Save -can save as .png or .webp - has inputs for metadata and toggles for folder_by_date (YYYY-MM-DD), prefix timestamp for the file (HHMM), and a custom sub_directory.
 0424_BW-Group-Varied-Elderly-Bored-Business Suit-GlassesBlack-Close-Up-Portrait-CityDayTrees
 
-📏 Shaker Latent GeneratorThe Shaker Latent Generator is a specialized resolution-management node for ComfyUI. It eliminates the guesswork and "math fatigue" associated with setting up latents for different models, ensuring your dimensions are always optimized for the specific architecture you are using (SD1.5 or SDXL).🚀 Why use this instead of the Empty Latent Image node?In standard ComfyUI, you have to manually enter pixel dimensions. If you get the math wrong, or use a resolution that isn't a multiple of 8, you'll encounter artifacts or performance degradation. The Shaker Latent Generator automates this process using industry-standard aspect ratios.✨ Key Features1. Smart Architecture PresetsSwitching between Small (SD1.5) and Large (SDXL) models usually requires changing your resolution to hit the "sweet spot" for those models. This node handles that transition with one click:Large (SDXL): Uses base resolutions optimized for the 1024x1024 training bucket (e.g., $1344 \times 768$ for Cinema).Small (SD1.5): Uses base resolutions optimized for the 512x512/768x768 range.2. Pro Aspect RatiosStop looking up pixel counts. Choose from standard cinematic and photographic ratios:Portrait (2:3)Wide (3:2)Cinema (16:9)Ultrawide (2.39:1)3. The "Divisible by 8" Safety NetNo matter what multiplier or custom size you use, the node automatically calculates the nearest value divisible by 8. This ensures your VAE and Sampler never encounter dimension-mismatch errors.4. Dynamic Multipliers & Custom SizesMultiplier: Want to generate at 1.5x or 2x resolution for high-res fixing? Just move the slider.Custom Mode: Need a specific size? Switch to "Custom" to use the manual width/height sliders while still benefiting from the auto-rounding logic.Random Mode: Let the node roll the dice on a random aspect ratio for every generation to find new compositions.
+# 📏 Shaker Latent Generator
 
+The **Shaker Latent Generator** is a specialized resolution-management node for ComfyUI. It eliminates the guesswork and "math fatigue" associated with setting up latents for different models, ensuring your dimensions are always optimized for the specific architecture you are using (SD1.5 or SDXL).
 
+## 🚀 Why use this instead of the Empty Latent Image node?
+
+In standard ComfyUI, you have to manually enter pixel dimensions. If you get the math wrong, or use a resolution that isn't a multiple of 8, you'll encounter artifacts or performance degradation. The Shaker Latent Generator automates this process using industry-standard aspect ratios.
+
+---
+
+## ✨ Key Features
+
+### 1. Smart Architecture Presets
+Switching between **Small (SD1.5)** and **Large (SDXL)** models usually requires changing your resolution to hit the "sweet spot" for those models. This node handles that transition with one click:
+* **Large (SDXL):** Uses base resolutions optimized for the 1024x1024 training bucket (e.g., 1344 x 768 for Cinema).
+* **Small (SD1.5):** Uses base resolutions optimized for the 512x512 / 768x768 range.
+
+### 2. Pro Aspect Ratios
+Stop looking up pixel counts. Choose from standard cinematic and photographic ratios:
+* **Portrait** (2:3)
+* **Wide** (3:2)
+* **Cinema** (16:9)
+* **Ultrawide** (2.39:1)
+
+### 3. The "Divisible by 8" Safety Net
+No matter what multiplier or custom size you use, the node automatically calculates the nearest value divisible by 8. This ensures your VAE and Sampler never encounter dimension-mismatch errors.
+
+### 4. Dynamic Multipliers & Custom Sizes
+* **Multiplier:** Want to generate at 1.5x or 2x resolution for high-res fixing? Just move the slider.
+* **Custom Mode:** Need a specific size? Switch to "Custom" to use the manual width/height sliders while still benefiting from the auto-rounding logic.
+* **Random Mode:** Let the node roll the dice on a random aspect ratio for every generation to find new compositions.
 
 EXTRA NODES:
 
