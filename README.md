@@ -1,5 +1,37 @@
 # ShakerNodesSuite-0.2
-Comfyui nodes for saving, combining, building, randomizing prompts
+Comfyui nodes for saving, combining, building, randomizing prompts. Also, lots of utilities for easier workflows - latent generator, live preview mirror, smart filename management, batching, piping. Here's the list of nodes - more detailed descriptions and tutorial workflow below:
+
+### 🧠 Prompting & Management
+* **Master Controller 🕹️**: Global remote to switch all Shaker nodes between Manual and Random modes.
+* **Shaker Dashboard**: The central hub for accessing the floating UI Preset and Scene managers.
+* **Category Nodes**: Dynamic nodes (e.g., Artist, Subject) generated automatically from your presets.
+* **Prompt Shaker**: The engine that compiles selections and merges negative prompts into one final string.
+* **Scene Stealer**: Captures the current configuration of every Shaker node in the graph.
+* **Scene Quick Load**: A streamlined node for jumping between your saved Scene snapshots.
+* **Metadata Filter**: Toggles which preset labels are exported to the image metadata/filename.
+
+### 📐 Generation Utilities
+* **Shaker Latent Generator**: Smart resolution manager with SD1.5/SDXL presets and auto-rounding logic.
+* **Advanced Image Save**: High-speed saver for WebP and PNG with automatic date-sorting and metadata injection.
+* **Shaker Reconstructor**: Reads Shaker metadata from an image to reset your workspace to those exact settings.
+
+### 📥 Shaker I/O (Input/Output)
+* **Video Single Loader**: Precision video importer with frame-accurate metadata and drag-and-drop support.
+* **Folder Loader**: Automated image batcher that iterates through directories one-by-one.
+* **Video Folder Loader**: Batch processor designed for high-volume Vid2Vid folder workflows.
+
+### 📺 Monitoring & UI
+* **Shaker Big Display 📺**: Large, high-visibility canvas renderer for prompts and seeds.
+* **Live Preview Mirror 📺**: A remote viewing window that mirrors sampling progress anywhere in the graph.
+* **Shaker Timer ⏱️**: A real-time stopwatch for benchmarking generation and workflow performance.
+
+### 🔌 Workflow Logic
+* **Shaker Pipe Pack**: Bundles up to 20 wires into a single clean connection to eliminate spaghetti.
+* **Shaker Pipe Unpack**: Extracts specific wires from a Shaker Pipe at their destination.
+* **Shaker Batch**: Combines up to 10 image or latent inputs into a single unified batch.
+* **Shaker Integer Slider**: Draggable handle for whole numbers (Steps, Batch Size).
+* **Shaker Float Slider**: Draggable handle for decimal values (Denoise, CFG).
+* **Shaker String Slider**: Converts numeric slider values into text strings for prompt injection.
 
 1. 
 INSTALL:
@@ -8,7 +40,7 @@ Add this suite to "/ComfyUI/custom_nodes"
 
 in cmd console: git clone https://github.com/ShakerSmith/ShakerNodesSuite
 
-2. OPEN THE INCLUDED EXAMPLE "TUTORIAL" WORKFLOW: 
+2. OPEN THE INCLUDED EXAMPLE "TUTORIAL" WORKFLOW: (save this image of a man in a suit - drag the image into Comfy - it will load with all the nodes correctly connected and a tutorial workflow with lots of notes.)
 
 TUTORIAL WORKLOW: <img width="832" height="1248" alt="ShakerNodes-Tutorial" src="https://github.com/user-attachments/assets/f7d5071b-2543-4e54-9b02-49fac734d1b4" />
 
@@ -18,7 +50,9 @@ NODES IN THIS SUITE:
 
 <img width="488" height="347" alt="546561546-364eec63-7718-441f-a75e-188744aa4767" src="https://github.com/user-attachments/assets/4b1100f7-675b-4f72-8d0b-d3515154fc93" />
 
-"Categories" "Presets" "Scenes"
+"Categories" "Presets" "Scenes": The idea here is to eliminate as much typing and prompt boxes - you use a built-in Preset Manager to save your prompts - organize them into categories - and use the Prompt Builder Main Console to assemble them into your final prompt to send to your samplers / workflow. 
+
+Have ten characters and twenty outfits and thirty settings? Great! save them all as presets, and run as many variations with JUST clicking buttons (or randomize them however you want!)
 
 ## A: Categories - contain "presets" and, on reload, will generate a new node for each category. That category's node will contain all the presets saved in that category.
 
@@ -33,6 +67,7 @@ each "category" node can be set to manual (choose ONE preset), random all (rando
 
 
 open the "PM" floating button, or "Preset Manager" on the Dashboard node. Add categories, reorder them, add/edit presets. can be pinned to the top or bottom of their category node. (default is alphabetical sorting)
+
 open the "SM" floating button, or "Scene Manager" on the Dashboard node. Can "capture" the current state of all your nodes and quickly load captures scenes.
 
 ADDING A NEW CATEGORY REQUIRES A COMFYUI RESTART. The Prompt Builder Console, on restart, will have a new input for your new category. There will ALSO be a new node available for you to connect to the Prompt Builder Console. Build order can be changed in the "edit categories" mode of the Preset Manager (floating "PM" button)
@@ -46,6 +81,9 @@ will take all the LABELS of your presets and output them, can be turned on an of
 
 
 # Advanced Image Save -can save as .png or .webp - has inputs for metadata and toggles for folder_by_date (YYYY-MM-DD), prefix timestamp for the file (HHMM), and a custom sub_directory.
+
+Easily organize your generations into timestamped folders AND autoname your generations using YOUR preset labels. For instance: 
+
 0424_BW-Group-Varied-Elderly-Bored-Business Suit-GlassesBlack-Close-Up-Portrait-CityDayTrees
 
 # 📏 Shaker Latent Generator
