@@ -8,16 +8,16 @@ Traditional prompting forces you to choose between two extremes: the "Wall of Te
 Comfyui nodes for saving, combining, building, randomizing prompts. Also, lots of utilities for easier workflows - latent generator, live preview mirror, smart filename management, batching, piping. Here's the list of nodes - more detailed descriptions and tutorial workflow below:
 
 ### 🧠 Prompting & Management
+* **Prompt Builder Console**: The engine that compiles selections and merges negative prompts into one final string.
+* **Category Nodes**: Dynamic nodes (e.g., Artist, Subject) generated automatically from your presets.
+* **Metadata Filter**: Toggles which preset labels are exported to the image metadata/filename.
 * **Master Controller 🕹️**: Global remote to switch all Shaker nodes between Manual and Random modes.
 * **Shaker Dashboard**: The central hub for accessing the floating UI Preset and Scene managers.
-* **Category Nodes**: Dynamic nodes (e.g., Artist, Subject) generated automatically from your presets.
-* **Prompt Builder Console**: The engine that compiles selections and merges negative prompts into one final string.
-* **Metadata Filter**: Toggles which preset labels are exported to the image metadata/filename.
 
 ### 📐 Generation Utilities
-* **Shaker Latent Generator**: Smart resolution manager with SD1.5/SDXL presets and auto-rounding logic.
+* **Shaker Latent Generator**: Smart resolution manager with SD1.5/SDXL/Z-Image presets and auto-rounding logic.
 * **Shaker Video Latent**: A specialized node for initializing video generation workflows. This one is "video-aware" and handles the heavy lifting of dimension math for you. Takes an input image, resizes, crops, and outputs latent accordingly.
-* **Advanced Image Save**: High-speed saver for WebP and PNG with automatic date-sorting and metadata injection.
+* **Advanced Image Save**: High-speed saver for WebP and PNG with automatic date-sorting and label-based filenaming and metadata injection.
 
 ### 📥 Shaker I/O (Input/Output)
 * **Video Single Loader**: Precision video importer with frame-accurate metadata and drag-and-drop support.
@@ -36,7 +36,6 @@ Comfyui nodes for saving, combining, building, randomizing prompts. Also, lots o
 * **Shaker Integer Slider**: Draggable handle for whole numbers (Steps, Batch Size). Right-click node properties to set upper and lower limits.
 * **Shaker Float Slider**: Draggable handle for decimal values (Denoise, CFG). Right-click node properties to set upper and lower limits.
 * **Shaker String Slider**: Converts numeric slider values into text strings for prompt injection. Right-click node properties to set upper and lower limits.
-* **Shaker Concatenate Any**: A dynamic, intelligent string concatenation node for **ComfyUI**. This node is designed to merge multiple text inputs while automatically handling empty values, whitespace, and formatting.
 
 1. 
 INSTALL:
