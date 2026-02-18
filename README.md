@@ -18,7 +18,6 @@ Comfyui nodes for saving, combining, building, randomizing prompts. Also, lots o
 * **Shaker Latent Generator**: Smart resolution manager with SD1.5/SDXL presets and auto-rounding logic.
 * **Shaker Video Latent**: A specialized node for initializing video generation workflows. This one is "video-aware" and handles the heavy lifting of dimension math for you. Takes an input image, resizes, crops, and outputs latent accordingly.
 * **Advanced Image Save**: High-speed saver for WebP and PNG with automatic date-sorting and metadata injection.
-* **Shaker Reconstructor**: Reads Shaker metadata from an image to reset your workspace to those exact settings.
 
 ### 📥 Shaker I/O (Input/Output)
 * **Video Single Loader**: Precision video importer with frame-accurate metadata and drag-and-drop support.
